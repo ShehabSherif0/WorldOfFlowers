@@ -1,573 +1,573 @@
-!DOCTYPE html
-html lang=ar dir=rtl
-head
-    meta charset=UTF-8
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    titleعالم الزهور  World of Flowerstitle
-    meta name=description content=أفضل محل زهور في فيصل والجيزة. باقات ورد طبيعي، هدايا، وتنسيقات لكل المناسبات.
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الزهور | World of Flowers</title>
+    <meta name="description" content="أفضل محل زهور في فيصل والجيزة. باقات ورد طبيعي، هدايا، وتنسيقات لكل المناسبات.">
 
-    !-- Fonts 'Cairo' is modern, legible, and excellent for Arabic --
-    link rel=preconnect href=httpsfonts.googleapis.com
-    link rel=preconnect href=httpsfonts.gstatic.com crossorigin
-    link href=httpsfonts.googleapis.comcss2family=Cairowght@300;400;500;700;900&display=swap rel=stylesheet
+    <!-- Fonts: 'Cairo' is modern, legible, and excellent for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     
-    !-- PERFORMANCE Preload the Hero Image immediately (Same image as Lilac Flowers) --
-    link rel=preload as=image href=httpsimages.unsplash.comphoto-1457089328109-e5d9bd499191q=80&w=1920&auto=format&fit=crop
+    <!-- PERFORMANCE: Preload the Hero Image immediately (Same image as Lilac Flowers) -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?q=80&w=1920&auto=format&fit=crop">
 
-    !-- Icons --
-    script src=httpsunpkg.comlucide@latestscript
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-    !-- Tailwind CSS --
-    script src=httpscdn.tailwindcss.comscript
-    script
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
         tailwind.config = {
-            theme {
-                extend {
-                    fontFamily {
-                        sans ['Cairo', 'sans-serif'],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
                     },
-                    colors {
-                         A calm, muted lilac palette
-                        lilac {
-                            50 '#fbf9fc',
-                            100 '#f5eff8',
-                            200 '#ebdcf2',
-                            300 '#debce8',
-                            400 '#ca9ad6',
-                            500 '#b079c2',  Main muted accent
-                            600 '#955ba6',  Darker textbuttons
-                            700 '#7d488a',
-                            800 '#683e72',
-                            900 '#56355c',
+                    colors: {
+                        // A calm, muted lilac palette
+                        lilac: {
+                            50: '#fbf9fc',
+                            100: '#f5eff8',
+                            200: '#ebdcf2',
+                            300: '#debce8',
+                            400: '#ca9ad6',
+                            500: '#b079c2', // Main muted accent
+                            600: '#955ba6', // Darker text/buttons
+                            700: '#7d488a',
+                            800: '#683e72',
+                            900: '#56355c',
                         },
-                        stone {
-                            50 '#fafaf9',
-                            100 '#f5f5f4',
-                            800 '#292524',
-                            900 '#1c1917',
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            800: '#292524',
+                            900: '#1c1917',
                         },
-                        gold {
-                            500 '#d4af37',  Muted gold
+                        gold: {
+                            500: '#d4af37', // Muted gold
                         }
                     },
-                    animation {
-                        'float' 'float 3s ease-in-out infinite',
-                        'pulse-slow' 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     },
-                    keyframes {
-                        float {
-                            '0%, 100%' { transform 'translateY(0)' },
-                            '50%' { transform 'translateY(-10px)' },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
                         }
                     }
                 }
             }
         }
-    script
+    </script>
 
-    style
-        html { scroll-behavior smooth; }
-        body { font-family 'Cairo', sans-serif; }
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Cairo', sans-serif; }
         
         .glass {
-            background rgba(255, 255, 255, 0.92);
-            backdrop-filter blur(12px);
-            -webkit-backdrop-filter blur(12px);
-            border-bottom 1px solid rgba(0,0,0,0.05);
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .hero-pattern {
-            background-color #fafaf9;
-            background-image url(dataimagesvg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='httpwww.w3.org2000svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23955ba6' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'%3E%3Cg%3E%3Cg%3E%3Csvg%3E);
+            background-color: #fafaf9;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23955ba6' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
 
         .whatsapp-float {
-            position fixed;
-            bottom 25px;
-            right 25px; 
-            z-index 100;
-            transition all 0.3s ease;
+            position: fixed;
+            bottom: 25px;
+            right: 25px; 
+            z-index: 100;
+            transition: all 0.3s ease;
         }
-        .whatsapp-floathover {
-            transform scale(1.05);
+        .whatsapp-float:hover {
+            transform: scale(1.05);
         }
         
         .reveal {
-            opacity 0;
-            transform translateY(30px);
-            transition all 0.8s ease-out;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
         }
         .reveal.active {
-            opacity 1;
-            transform translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
 
-         Card Hover Effect 
-        .occasion-cardhover .occasion-overlay {
-            opacity 1;
+        /* Card Hover Effect */
+        .occasion-card:hover .occasion-overlay {
+            opacity: 1;
         }
-        .occasion-cardhover img {
-            transform scale(1.1);
+        .occasion-card:hover img {
+            transform: scale(1.1);
         }
-    style
-head
-body class=bg-stone-50 text-stone-800 antialiased selectionbg-lilac-200 selectiontext-lilac-900
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-lilac-200 selection:text-lilac-900">
 
-    !-- Navbar --
-    nav class=fixed w-full z-50 glass transition-all duration-300 shadow-sm
-        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
-            div class=flex justify-between items-center h-20
-                !-- Logo --
-                div class=flex items-center gap-3
-                    div class=bg-lilac-100 text-lilac-600 p-2 rounded-lg
-                        i data-lucide=flower-2 class=h-6 w-6i
-                    div
-                    div
-                        h1 class=text-2xl font-bold text-stone-800 leading-noneعالم الزهورh1
-                        p class=text-[10px] text-lilac-600 font-semibold tracking-widest uppercase mt-0.5World of Flowersp
-                    div
-                div
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-lilac-100 text-lilac-600 p-2 rounded-lg">
+                        <i data-lucide="flower-2" class="h-6 w-6"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-stone-800 leading-none">عالم الزهور</h1>
+                        <p class="text-[10px] text-lilac-600 font-semibold tracking-widest uppercase mt-0.5">World of Flowers</p>
+                    </div>
+                </div>
 
-                !-- Desktop Links --
-                div class=hidden mdflex items-center gap-8
-                    a href=#home class=font-medium text-stone-600 hovertext-lilac-600 transitionالرئيسيةa
-                    a href=#occasions class=font-medium text-stone-600 hovertext-lilac-600 transitionالمناسباتa
-                    a href=#reviews class=font-medium text-stone-600 hovertext-lilac-600 transitionآراء العملاءa
-                    a href=#location class=font-medium text-stone-600 hovertext-lilac-600 transitionالموقعa
-                div
+                <!-- Desktop Links -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="font-medium text-stone-600 hover:text-lilac-600 transition">الرئيسية</a>
+                    <a href="#occasions" class="font-medium text-stone-600 hover:text-lilac-600 transition">المناسبات</a>
+                    <a href="#reviews" class="font-medium text-stone-600 hover:text-lilac-600 transition">آراء العملاء</a>
+                    <a href="#location" class="font-medium text-stone-600 hover:text-lilac-600 transition">الموقع</a>
+                </div>
 
-                !-- CTA Button --
-                a href=httpswa.me201044850752 target=_blank class=hidden mdflex items-center gap-2 bg-stone-800 text-white px-6 py-2.5 rounded-full font-bold hoverbg-stone-700 transition shadow-lg transform hover-translate-y-0.5 text-sm
-                    spanاطلب باقتكspan
-                    i data-lucide=arrow-left class=h-4 w-4i
-                a
+                <!-- CTA Button -->
+                <a href="https://wa.me/201044850752" target="_blank" class="hidden md:flex items-center gap-2 bg-stone-800 text-white px-6 py-2.5 rounded-full font-bold hover:bg-stone-700 transition shadow-lg transform hover:-translate-y-0.5 text-sm">
+                    <span>اطلب باقتك</span>
+                    <i data-lucide="arrow-left" class="h-4 w-4"></i>
+                </a>
 
-                !-- Mobile Menu Button --
-                button id=mobile-menu-btn class=mdhidden text-stone-600 p-2
-                    i data-lucide=menu class=h-7 w-7i
-                button
-            div
-        div
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-stone-600 p-2">
+                    <i data-lucide="menu" class="h-7 w-7"></i>
+                </button>
+            </div>
+        </div>
 
-        !-- Mobile Menu --
-        div id=mobile-menu class=hidden mdhidden bg-white95 backdrop-blur-xl border-t border-stone-100 absolute w-full left-0 shadow-xl h-screen z-40
-            div class=flex flex-col p-6 space-y-6 text-center mt-10
-                a href=#home class=text-2xl font-bold text-stone-700 hovertext-lilac-600الرئيسيةa
-                a href=#occasions class=text-2xl font-bold text-stone-700 hovertext-lilac-600المناسباتa
-                a href=#reviews class=text-2xl font-bold text-stone-700 hovertext-lilac-600آراء العملاءa
-                a href=#location class=text-2xl font-bold text-stone-700 hovertext-lilac-600الموقعa
-                a href=httpswa.me201044850752 class=mt-8 py-4 bg-lilac-600 text-white rounded-xl font-bold text-xl shadow-lgتواصل واتسابa
-            div
-        div
-    nav
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t border-stone-100 absolute w-full left-0 shadow-xl h-screen z-40">
+            <div class="flex flex-col p-6 space-y-6 text-center mt-10">
+                <a href="#home" class="text-2xl font-bold text-stone-700 hover:text-lilac-600">الرئيسية</a>
+                <a href="#occasions" class="text-2xl font-bold text-stone-700 hover:text-lilac-600">المناسبات</a>
+                <a href="#reviews" class="text-2xl font-bold text-stone-700 hover:text-lilac-600">آراء العملاء</a>
+                <a href="#location" class="text-2xl font-bold text-stone-700 hover:text-lilac-600">الموقع</a>
+                <a href="https://wa.me/201044850752" class="mt-8 py-4 bg-lilac-600 text-white rounded-xl font-bold text-xl shadow-lg">تواصل واتساب</a>
+            </div>
+        </div>
+    </nav>
 
-    !-- Hero Section --
-    header id=home class=relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden
-        !-- Background Image with Overlay --
-        div class=absolute inset-0 z-0
-            img src=httpsimages.unsplash.comphoto-1457089328109-e5d9bd499191q=80&w=1920&auto=format&fit=crop alt=Beautiful Flowers Background class=w-full h-full object-cover
-            div class=absolute inset-0 bg-gradient-to-r from-stone-90060 via-stone-80040 to-transparentdiv
-        div
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?q=80&w=1920&auto=format&fit=crop" alt="Beautiful Flowers Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-900/60 via-stone-800/40 to-transparent"></div>
+        </div>
 
-        div class=relative z-10 container mx-auto px-6 text-right mdtext-center pt-20
-            div class=inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-white20 backdrop-blur-md border border-white30 text-white text-sm font-bold mb-6 animate-float shadow-sm
-                i data-lucide=star class=h-4 w-4 text-yellow-400 fill-currenti
-                spanالأعلى تقييماً في فيصل والجيزةspan
-            div
+        <div class="relative z-10 container mx-auto px-6 text-right md:text-center pt-20">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-bold mb-6 animate-float shadow-sm">
+                <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                <span>الأعلى تقييماً في فيصل والجيزة</span>
+            </div>
             
-            h1 class=text-4xl mdtext-6xl lgtext-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 عبر عن مشاعرك
-                br
-                span class=text-lilac-200 font-blackبأجمل لغات العالمspan
-            h1
+                <br>
+                <span class="text-lilac-200 font-black">بأجمل لغات العالم</span>
+            </h1>
             
-            p class=text-lg mdtext-xl text-stone-100 mb-10 max-w-2xl mdmx-auto font-normal leading-relaxed drop-shadow-md
+            <p class="text-lg md:text-xl text-stone-100 mb-10 max-w-2xl md:mx-auto font-normal leading-relaxed drop-shadow-md">
                 في عالم الزهور، نحول مشاعرك إلى باقات تنبض بالحياة. 
                 تنسيقات طبيعية، توصيل سريع، ولمسات فنية تصنع ذكريات لا تُنسى.
-            p
+            </p>
             
-            !-- Modern Glassmorphism Buttons --
-            div class=flex flex-col smflex-row gap-5 justify-start mdjustify-center
+            <!-- Modern Glassmorphism Buttons -->
+            <div class="flex flex-col sm:flex-row gap-5 justify-start md:justify-center">
                 
-                !-- Primary Action WhatsApp (Frosted Glass with Brand Color) --
-                a href=httpswa.me201044850752 target=_blank class=group relative overflow-hidden bg-lilac-60060 backdrop-blur-xl border border-white20 text-white px-9 py-4 rounded-full text-lg font-bold shadow-[0_0_30px_-5px_rgba(147,51,234,0.4)] transition-all duration-300 transform hover-translate-y-1 hoverscale-105 hoverbg-lilac-60080 hovershadow-lilac-50040 flex items-center justify-center gap-3
-                    span class=absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white10 to-transparent -translate-x-full group-hovertranslate-x-full transition-transform duration-700 ease-in-outspan
-                    i data-lucide=message-circle class=h-5 w-5 relative z-10i
-                    span class=relative z-10اطلب عبر واتسابspan
-                a
+                <!-- Primary Action: WhatsApp (Frosted Glass with Brand Color) -->
+                <a href="https://wa.me/201044850752" target="_blank" class="group relative overflow-hidden bg-lilac-600/60 backdrop-blur-xl border border-white/20 text-white px-9 py-4 rounded-full text-lg font-bold shadow-[0_0_30px_-5px_rgba(147,51,234,0.4)] transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:bg-lilac-600/80 hover:shadow-lilac-500/40 flex items-center justify-center gap-3">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
+                    <i data-lucide="message-circle" class="h-5 w-5 relative z-10"></i>
+                    <span class="relative z-10">اطلب عبر واتساب</span>
+                </a>
 
-                !-- Secondary Action Gift (Clean Glass) --
-                a href=#occasions class=group bg-white10 backdrop-blur-md border border-white30 text-white px-9 py-4 rounded-full text-lg font-bold shadow-lg transition-all duration-300 transform hover-translate-y-1 hoverbg-white20 hoverborder-white50 flex items-center justify-center gap-3
-                    i data-lucide=gift class=h-5 w-5 group-hoverrotate-12 transition-transform duration-300i
-                    spanاختر هديتكspan
-                a
-            div
-        div
-    header
+                <!-- Secondary Action: Gift (Clean Glass) -->
+                <a href="#occasions" class="group bg-white/10 backdrop-blur-md border border-white/30 text-white px-9 py-4 rounded-full text-lg font-bold shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:bg-white/20 hover:border-white/50 flex items-center justify-center gap-3">
+                    <i data-lucide="gift" class="h-5 w-5 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span>اختر هديتك</span>
+                </a>
+            </div>
+        </div>
+    </header>
 
-    !-- Shop by Occasion --
-    section id=occasions class=py-24 bg-white relative
-        div class=container mx-auto px-6
-            div class=text-center mb-16 reveal
-                span class=text-lilac-600 font-bold tracking-wider text-sm uppercase block mb-2لأي مناسبة تخطط؟span
-                h2 class=text-3xl mdtext-4xl font-bold text-stone-800اختر الباقة المثاليةh2
-            div
+    <!-- Shop by Occasion -->
+    <section id="occasions" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-lilac-600 font-bold tracking-wider text-sm uppercase block mb-2">لأي مناسبة تخطط؟</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-stone-800">اختر الباقة المثالية</h2>
+            </div>
 
-            div class=grid grid-cols-1 mdgrid-cols-2 lggrid-cols-4 gap-6
-                !-- Occasion 1 Love (Red Roses from Lilac) --
-                a href=httpswa.me201044850752text=أريد باقة حب ورومانسية target=_blank class=occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal
-                    img src=httpsimages.unsplash.comphoto-1496062031456-07b8f162a322q=80&w=600&auto=format&fit=crop class=w-full h-full object-cover transition duration-700 alt=Red Rose Bouquet
-                    div class=absolute inset-0 bg-gradient-to-t from-stone-90090 via-stone-90020 to-transparentdiv
-                    div class=absolute bottom-0 w-full p-6 text-white z-10
-                        h3 class=text-2xl font-bold mb-1حب ورومانسيةh3
-                        p class=text-stone-300 text-sm opacity-0 group-hoveropacity-100 transition-opacity duration-300 transform translate-y-2 group-hovertranslate-y-0عبر عن حبك باللون الأحمرp
-                    div
-                a
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Occasion 1: Love (Red Roses from Lilac) -->
+                <a href="https://wa.me/201044850752?text=أريد باقة حب ورومانسية" target="_blank" class="occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal">
+                    <img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700" alt="Red Rose Bouquet">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+                    <div class="absolute bottom-0 w-full p-6 text-white z-10">
+                        <h3 class="text-2xl font-bold mb-1">حب ورومانسية</h3>
+                        <p class="text-stone-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">عبر عن حبك باللون الأحمر</p>
+                    </div>
+                </a>
 
-                !-- Occasion 2 Wedding (White Roses from Lilac) --
-                a href=httpswa.me201044850752text=أبحث عن بوكيه عروس target=_blank class=occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal style=transition-delay 100ms;
-                    img src=httpsimages.unsplash.comphoto-1591886960571-74d43a9d4166q=80&w=600&auto=format&fit=crop class=w-full h-full object-cover transition duration-700 alt=Wedding Flowers
-                    div class=absolute inset-0 bg-gradient-to-t from-stone-90090 via-stone-90020 to-transparentdiv
-                    div class=absolute bottom-0 w-full p-6 text-white z-10
-                        h3 class=text-2xl font-bold mb-1بوكيهات عرائسh3
-                        p class=text-stone-300 text-sm opacity-0 group-hoveropacity-100 transition-opacity duration-300 transform translate-y-2 group-hovertranslate-y-0لليلة العمر المميزةp
-                    div
-                a
+                <!-- Occasion 2: Wedding (White Roses from Lilac) -->
+                <a href="https://wa.me/201044850752?text=أبحث عن بوكيه عروس" target="_blank" class="occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700" alt="Wedding Flowers">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+                    <div class="absolute bottom-0 w-full p-6 text-white z-10">
+                        <h3 class="text-2xl font-bold mb-1">بوكيهات عرائس</h3>
+                        <p class="text-stone-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">لليلة العمر المميزة</p>
+                    </div>
+                </a>
 
-                !-- Occasion 3 Get Well (Beautiful Bouquet from Lilac) --
-                a href=httpswa.me201044850752text=أريد باقة زيارة أو حمدلله على السلامة target=_blank class=occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal style=transition-delay 200ms;
-                    img src=httpsimages.unsplash.comphoto-1507290439931-a861b5a38200q=80&w=600&auto=format&fit=crop class=w-full h-full object-cover transition duration-700 alt=Visit Flowers
-                    div class=absolute inset-0 bg-gradient-to-t from-stone-90090 via-stone-90020 to-transparentdiv
-                    div class=absolute bottom-0 w-full p-6 text-white z-10
-                        h3 class=text-2xl font-bold mb-1زيارات وهداياh3
-                        p class=text-stone-300 text-sm opacity-0 group-hoveropacity-100 transition-opacity duration-300 transform translate-y-2 group-hovertranslate-y-0أجمل هدية لزيارة الأحبابp
-                    div
-                a
+                <!-- Occasion 3: Get Well (Beautiful Bouquet from Lilac) -->
+                <a href="https://wa.me/201044850752?text=أريد باقة زيارة أو حمدلله على السلامة" target="_blank" class="occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1507290439931-a861b5a38200?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700" alt="Visit Flowers">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+                    <div class="absolute bottom-0 w-full p-6 text-white z-10">
+                        <h3 class="text-2xl font-bold mb-1">زيارات وهدايا</h3>
+                        <p class="text-stone-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">أجمل هدية لزيارة الأحباب</p>
+                    </div>
+                </a>
 
-                !-- Occasion 4 Celebration (Wrapped Bouquet from Lilac) --
-                a href=httpswa.me201044850752text=أريد تنسيق شوكولاتة وهدايا target=_blank class=occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal style=transition-delay 300ms;
-                    img src=httpsimages.unsplash.comphoto-1526047932273-341f2a7631f9q=80&w=600&auto=format&fit=crop class=w-full h-full object-cover transition duration-700 alt=Wrapped Flowers
-                    div class=absolute inset-0 bg-gradient-to-t from-stone-90090 via-stone-90020 to-transparentdiv
-                    div class=absolute bottom-0 w-full p-6 text-white z-10
-                        h3 class=text-2xl font-bold mb-1زهور وشوكولاتةh3
-                        p class=text-stone-300 text-sm opacity-0 group-hoveropacity-100 transition-opacity duration-300 transform translate-y-2 group-hovertranslate-y-0الفرحة تكتمل بالطعم الحلوp
-                    div
-                a
-            div
+                <!-- Occasion 4: Celebration (Wrapped Bouquet from Lilac) -->
+                <a href="https://wa.me/201044850752?text=أريد تنسيق شوكولاتة وهدايا" target="_blank" class="occasion-card group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg reveal" style="transition-delay: 300ms;">
+                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700" alt="Wrapped Flowers">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent"></div>
+                    <div class="absolute bottom-0 w-full p-6 text-white z-10">
+                        <h3 class="text-2xl font-bold mb-1">زهور وشوكولاتة</h3>
+                        <p class="text-stone-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">الفرحة تكتمل بالطعم الحلو</p>
+                    </div>
+                </a>
+            </div>
             
-            div class=mt-12 text-center reveal
-                p class=text-stone-500 mb-6لديك فكرة خاصة؟ نحن ننفذ أي تصميم تطلبهp
-                a href=httpswa.me201044850752 class=inline-flex items-center text-lilac-600 font-bold hovertext-lilac-800 transition border-b-2 border-lilac-200 hoverborder-lilac-600 pb-1
+            <div class="mt-12 text-center reveal">
+                <p class="text-stone-500 mb-6">لديك فكرة خاصة؟ نحن ننفذ أي تصميم تطلبه</p>
+                <a href="https://wa.me/201044850752" class="inline-flex items-center text-lilac-600 font-bold hover:text-lilac-800 transition border-b-2 border-lilac-200 hover:border-lilac-600 pb-1">
                     تحدث مع المنسق الآن
-                    i data-lucide=arrow-left class=mr-2 h-4 w-4i
-                a
-            div
-        div
-    section
+                    <i data-lucide="arrow-left" class="mr-2 h-4 w-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    !-- Modern Features Section --
-    section id=features class=py-24 bg-gradient-to-b from-stone-50 to-white relative overflow-hidden
-        !-- Abstract Background Shapes --
-        div class=absolute top-0 left-0 w-full h-full overflow-hidden opacity-30 pointer-events-none
-            div class=absolute top-10 right-10 w-64 h-64 bg-lilac-200 rounded-full blur-3xl mix-blend-multiply animate-pulse-slowdiv
-            div class=absolute bottom-10 left-10 w-64 h-64 bg-lilac-100 rounded-full blur-3xl mix-blend-multiplydiv
-        div
+    <!-- Modern Features Section -->
+    <section id="features" class="py-24 bg-gradient-to-b from-stone-50 to-white relative overflow-hidden">
+        <!-- Abstract Background Shapes -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-30 pointer-events-none">
+            <div class="absolute top-10 right-10 w-64 h-64 bg-lilac-200 rounded-full blur-3xl mix-blend-multiply animate-pulse-slow"></div>
+            <div class="absolute bottom-10 left-10 w-64 h-64 bg-lilac-100 rounded-full blur-3xl mix-blend-multiply"></div>
+        </div>
 
-        div class=container mx-auto px-6 relative z-10
-            div class=text-center mb-16 reveal
-                span class=text-lilac-600 font-bold tracking-wider text-sm uppercase block mb-2لماذا عالم الزهور؟span
-                h2 class=text-3xl mdtext-4xl font-bold text-stone-800نصنع الفرق في كل تفصيلh2
-            div
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <span class="text-lilac-600 font-bold tracking-wider text-sm uppercase block mb-2">لماذا عالم الزهور؟</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-stone-800">نصنع الفرق في كل تفصيل</h2>
+            </div>
 
-            div class=grid mdgrid-cols-3 gap-8
-                !-- Feature 1 Hours --
-                div class=group bg-white rounded-[2rem] p-8 border border-stone-100 shadow-sm hovershadow-xl transition-all duration-500 hover-translate-y-2 relative overflow-hidden reveal
-                    div class=absolute top-0 right-0 w-32 h-32 bg-lilac-50 rounded-full blur-3xl -mr-16 -mt-16 transition-opacity opacity-50 group-hoveropacity-100div
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1: Hours -->
+                <div class="group bg-white rounded-[2rem] p-8 border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden reveal">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-lilac-50 rounded-full blur-3xl -mr-16 -mt-16 transition-opacity opacity-50 group-hover:opacity-100"></div>
                     
-                    div class=relative z-10
-                        div class=w-16 h-16 bg-lilac-50 text-lilac-600 rounded-2xl flex items-center justify-center mb-6 group-hoverscale-110 transition-transform duration-300 shadow-sm
-                            i data-lucide=clock class=h-8 w-8i
-                        div
-                        h3 class=text-xl font-bold mb-3 text-stone-800 group-hovertext-lilac-700 transition-colorsخدمة حتى 1 صباحاًh3
-                        p class=text-stone-500 leading-relaxed text-sm
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-lilac-50 text-lilac-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                            <i data-lucide="clock" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-stone-800 group-hover:text-lilac-700 transition-colors">خدمة حتى 1 صباحاً</h3>
+                        <p class="text-stone-500 leading-relaxed text-sm">
                             نسهر على راحتكم وتجهيز طلباتكم يومياً من الصباح الباكر وحتى بعد منتصف الليل، لنكون معكم في كل لحظاتكم.
-                        p
-                    div
-                div
+                        </p>
+                    </div>
+                </div>
 
-                !-- Feature 2 Quality --
-                div class=group bg-white rounded-[2rem] p-8 border border-stone-100 shadow-sm hovershadow-xl transition-all duration-500 hover-translate-y-2 relative overflow-hidden reveal style=transition-delay 100ms;
-                    div class=absolute top-0 right-0 w-32 h-32 bg-lilac-50 rounded-full blur-3xl -mr-16 -mt-16 transition-opacity opacity-50 group-hoveropacity-100div
+                <!-- Feature 2: Quality -->
+                <div class="group bg-white rounded-[2rem] p-8 border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden reveal" style="transition-delay: 100ms;">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-lilac-50 rounded-full blur-3xl -mr-16 -mt-16 transition-opacity opacity-50 group-hover:opacity-100"></div>
                     
-                    div class=relative z-10
-                        div class=w-16 h-16 bg-lilac-50 text-lilac-600 rounded-2xl flex items-center justify-center mb-6 group-hoverscale-110 transition-transform duration-300 shadow-sm
-                            i data-lucide=sparkles class=h-8 w-8i
-                        div
-                        h3 class=text-xl font-bold mb-3 text-stone-800 group-hovertext-lilac-700 transition-colorsجودة وتنوعh3
-                        p class=text-stone-500 leading-relaxed text-sm
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-lilac-50 text-lilac-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                            <i data-lucide="sparkles" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-stone-800 group-hover:text-lilac-700 transition-colors">جودة وتنوع</h3>
+                        <p class="text-stone-500 leading-relaxed text-sm">
                             نضمن لك زهوراً نضرة تعيش طويلاً، مع خيارات واسعة من التغليف والهدايا المرافقة لتناسب جميع الأذواق.
-                        p
-                    div
-                div
+                        </p>
+                    </div>
+                </div>
 
-                !-- Feature 3 Service --
-                div class=group bg-white rounded-[2rem] p-8 border border-stone-100 shadow-sm hovershadow-xl transition-all duration-500 hover-translate-y-2 relative overflow-hidden reveal style=transition-delay 200ms;
-                    div class=absolute top-0 right-0 w-32 h-32 bg-lilac-50 rounded-full blur-3xl -mr-16 -mt-16 transition-opacity opacity-50 group-hoveropacity-100div
+                <!-- Feature 3: Service -->
+                <div class="group bg-white rounded-[2rem] p-8 border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden reveal" style="transition-delay: 200ms;">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-lilac-50 rounded-full blur-3xl -mr-16 -mt-16 transition-opacity opacity-50 group-hover:opacity-100"></div>
                     
-                    div class=relative z-10
-                        div class=w-16 h-16 bg-lilac-50 text-lilac-600 rounded-2xl flex items-center justify-center mb-6 group-hoverscale-110 transition-transform duration-300 shadow-sm
-                            i data-lucide=heart-handshake class=h-8 w-8i
-                        div
-                        h3 class=text-xl font-bold mb-3 text-stone-800 group-hovertext-lilac-700 transition-colorsمعاملة راقيةh3
-                        p class=text-stone-500 leading-relaxed text-sm
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-lilac-50 text-lilac-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                            <i data-lucide="heart-handshake" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-stone-800 group-hover:text-lilac-700 transition-colors">معاملة راقية</h3>
+                        <p class="text-stone-500 leading-relaxed text-sm">
                             نفتخر بتقييمات عملائنا ونسعى دائماً لرسم البسمة بأسلوب محترم واحترافي، لأنكم تستحقون الأفضل.
-                        p
-                    div
-                div
-            div
-        div
-    section
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    !-- Reviews Section --
-    section id=reviews class=py-20 bg-stone-900 text-white overflow-hidden relative
-        div class=absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-lilac-90050 rounded-full blur-3xldiv
-        div class=absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-stone-800 rounded-full blur-3xldiv
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-stone-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-lilac-900/50 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-stone-800 rounded-full blur-3xl"></div>
 
-        div class=container mx-auto px-6 relative z-10
-            div class=flex flex-col mdflex-row justify-between items-end mb-12
-                div
-                    h2 class=text-3xl mdtext-5xl font-bold mb-4قالوا عن عالم الزهورh2
-                    div class=flex items-center gap-2 text-lilac-200
-                        spanتقييم 4.8 من 5 على خرائط جوجلspan
-                        div class=flex text-yellow-400
-                            i data-lucide=star class=fill-current w-4 h-4ii data-lucide=star class=fill-current w-4 h-4ii data-lucide=star class=fill-current w-4 h-4ii data-lucide=star class=fill-current w-4 h-4ii data-lucide=star class=fill-current w-4 h-4i
-                        div
-                    div
-                div
-                a href=httpsmaps.app.goo.gl9UbMaTZmkQbNMPop6 target=_blank class=mt-6 mdmt-0 text-white border border-white20 hoverbg-white10 px-6 py-2 rounded-full transition text-smشاهد كل التقييماتa
-            div
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">قالوا عن عالم الزهور</h2>
+                    <div class="flex items-center gap-2 text-lilac-200">
+                        <span>تقييم 4.8 من 5 على خرائط جوجل</span>
+                        <div class="flex text-yellow-400">
+                            <i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/9UbMaTZmkQbNMPop6" target="_blank" class="mt-6 md:mt-0 text-white border border-white/20 hover:bg-white/10 px-6 py-2 rounded-full transition text-sm">شاهد كل التقييمات</a>
+            </div>
 
-            div class=grid mdgrid-cols-3 gap-6
-                !-- Review 1 --
-                div class=bg-white5 backdrop-blur-md p-8 rounded-2xl border border-white10 hoverborder-lilac-50050 transition reveal
-                    p class=text-stone-200 mb-6 leading-relaxed italic
-                        ميرسي جدًا، الورد تحفة وهدية حلوة أوي وأكيد مش آخر تعامل مع المحل، كل مرة هطلب من عندكم، وشكرًا أوي على ذوقكم.
-                    p
-                    div class=flex items-center gap-3
-                        div class=w-10 h-10 rounded-full bg-lilac-600 flex items-center justify-center font-bold text-whiteEdiv
-                        div
-                            h4 class=font-boldEman Gamalh4
-                            span class=text-xs text-stone-400عميل موثوقspan
-                        div
-                    div
-                div
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:border-lilac-500/50 transition reveal">
+                    <p class="text-stone-200 mb-6 leading-relaxed italic">
+                        "ميرسي جدًا، الورد تحفة وهدية حلوة أوي وأكيد مش آخر تعامل مع المحل، كل مرة هطلب من عندكم، وشكرًا أوي على ذوقكم."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-lilac-600 flex items-center justify-center font-bold text-white">E</div>
+                        <div>
+                            <h4 class="font-bold">Eman Gamal</h4>
+                            <span class="text-xs text-stone-400">عميل موثوق</span>
+                        </div>
+                    </div>
+                </div>
 
-                !-- Review 2 --
-                div class=bg-white5 backdrop-blur-md p-8 rounded-2xl border border-white10 hoverborder-lilac-50050 transition reveal style=transition-delay 100ms;
-                    p class=text-stone-200 mb-6 leading-relaxed italic
-                        من افضل التعامل والسرعه وطلبت من الاستاذ محمد حاجات وجوابها ليه وصل الاوردر في اسرع وقت وانصح التعامل معهم ناس جدا محترمه.
-                    p
-                    div class=flex items-center gap-3
-                        div class=w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-whiteنdiv
-                        div
-                            h4 class=font-boldناصر مرازيقh4
-                            span class=text-xs text-stone-400عميل موثوقspan
-                        div
-                    div
-                div
+                <!-- Review 2 -->
+                <div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:border-lilac-500/50 transition reveal" style="transition-delay: 100ms;">
+                    <p class="text-stone-200 mb-6 leading-relaxed italic">
+                        "من افضل التعامل والسرعه وطلبت من الاستاذ محمد حاجات وجوابها ليه وصل الاوردر في اسرع وقت وانصح التعامل معهم ناس جدا محترمه."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-stone-700 flex items-center justify-center font-bold text-white">ن</div>
+                        <div>
+                            <h4 class="font-bold">ناصر مرازيق</h4>
+                            <span class="text-xs text-stone-400">عميل موثوق</span>
+                        </div>
+                    </div>
+                </div>
 
-                !-- Review 3 --
-                div class=bg-white5 backdrop-blur-md p-8 rounded-2xl border border-white10 hoverborder-lilac-50050 transition reveal style=transition-delay 200ms;
-                    p class=text-stone-200 mb-6 leading-relaxed italic
-                        افضل واحلي تعامل وزوق ومصداقيه حتي في الميعاد بالدقيقه انا اول مره اعمل review لحد ❤️❤️❤️❤️😊😊😊
-                    p
-                    div class=flex items-center gap-3
-                        div class=w-10 h-10 rounded-full bg-lilac-600 flex items-center justify-center font-bold text-whiteMdiv
-                        div
-                            h4 class=font-boldMostafa Abo el Fotohh4
-                            span class=text-xs text-stone-400عميل موثوقspan
-                        div
-                    div
-                div
-            div
-        div
-    section
+                <!-- Review 3 -->
+                <div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:border-lilac-500/50 transition reveal" style="transition-delay: 200ms;">
+                    <p class="text-stone-200 mb-6 leading-relaxed italic">
+                        "افضل واحلي تعامل وزوق ومصداقيه حتي في الميعاد بالدقيقه انا اول مره اعمل review لحد ❤️❤️❤️❤️😊😊😊"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-lilac-600 flex items-center justify-center font-bold text-white">M</div>
+                        <div>
+                            <h4 class="font-bold">Mostafa Abo el Fotoh</h4>
+                            <span class="text-xs text-stone-400">عميل موثوق</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    !-- Location & Contact Section --
-    section id=location class=py-20 bg-stone-100
-        div class=container mx-auto px-6
-            div class=bg-white rounded-[2rem] shadow-xl overflow-hidden border border-stone-200
-                div class=grid lggrid-cols-2
-                    !-- Info Side --
-                    div class=p-10 mdp-14 flex flex-col justify-center
-                        span class=text-lilac-600 font-bold uppercase tracking-wider text-sm mb-2تفضل بزيارتناspan
-                        h2 class=text-3xl font-bold text-stone-800 mb-8فرعنا في فيصلh2
+    <!-- Location & Contact Section -->
+    <section id="location" class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-stone-200">
+                <div class="grid lg:grid-cols-2">
+                    <!-- Info Side -->
+                    <div class="p-10 md:p-14 flex flex-col justify-center">
+                        <span class="text-lilac-600 font-bold uppercase tracking-wider text-sm mb-2">تفضل بزيارتنا</span>
+                        <h2 class="text-3xl font-bold text-stone-800 mb-8">فرعنا في فيصل</h2>
                         
-                        div class=space-y-8
-                            !-- Address --
-                            div class=flex gap-5
-                                div class=w-12 h-12 rounded-full bg-lilac-50 text-lilac-500 flex items-center justify-center shrink-0
-                                    i data-lucide=map-pin class=h-6 w-6i
-                                div
-                                div
-                                    h3 class=font-bold text-lg mb-1 text-stone-800العنوانh3
-                                    p class=text-stone-600 leading-relaxed
-                                        برج الشرطة، 271 شارع الملك فيصلbr
-                                        التعاون، بجوار البنزينةbr
+                        <div class="space-y-8">
+                            <!-- Address -->
+                            <div class="flex gap-5">
+                                <div class="w-12 h-12 rounded-full bg-lilac-50 text-lilac-500 flex items-center justify-center shrink-0">
+                                    <i data-lucide="map-pin" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1 text-stone-800">العنوان</h3>
+                                    <p class="text-stone-600 leading-relaxed">
+                                        برج الشرطة، 271 شارع الملك فيصل<br>
+                                        التعاون، بجوار البنزينة<br>
                                         أولى الهرم، الجيزة
-                                    p
-                                div
-                            div
+                                    </p>
+                                </div>
+                            </div>
 
-                            !-- Phone --
-                            div class=flex gap-5
-                                div class=w-12 h-12 rounded-full bg-lilac-50 text-lilac-500 flex items-center justify-center shrink-0
-                                    i data-lucide=phone class=h-6 w-6i
-                                div
-                                div
-                                    h3 class=font-bold text-lg mb-1 text-stone-800اتصل بناh3
-                                    a href=tel01044850752 class=text-xl font-bold text-stone-700 hovertext-lilac-600 transition dir=ltr01044850752a
-                                div
-                            div
+                            <!-- Phone -->
+                            <div class="flex gap-5">
+                                <div class="w-12 h-12 rounded-full bg-lilac-50 text-lilac-500 flex items-center justify-center shrink-0">
+                                    <i data-lucide="phone" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1 text-stone-800">اتصل بنا</h3>
+                                    <a href="tel:01044850752" class="text-xl font-bold text-stone-700 hover:text-lilac-600 transition" dir="ltr">01044850752</a>
+                                </div>
+                            </div>
 
-                            !-- Hours --
-                            div class=flex gap-5
-                                div class=w-12 h-12 rounded-full bg-lilac-50 text-lilac-500 flex items-center justify-center shrink-0
-                                    i data-lucide=clock class=h-6 w-6i
-                                div
-                                div
-                                    h3 class=font-bold text-lg mb-1 text-stone-800ساعات العملh3
-                                    div class=grid grid-cols-2 gap-x-8 text-sm text-stone-600
-                                        divالخميسdivdiv class=font-bold dir=ltr8 AM - 1 AMdiv
-                                        divالجمعةdivdiv class=font-bold text-lilac-600 dir=ltr8 AM - 1 AMdiv
-                                        divالسبت - الأربعاءdivdiv class=font-bold dir=ltr8 AM - 1 AMdiv
-                                    div
-                                div
-                            div
-                        div
+                            <!-- Hours -->
+                            <div class="flex gap-5">
+                                <div class="w-12 h-12 rounded-full bg-lilac-50 text-lilac-500 flex items-center justify-center shrink-0">
+                                    <i data-lucide="clock" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1 text-stone-800">ساعات العمل</h3>
+                                    <div class="grid grid-cols-2 gap-x-8 text-sm text-stone-600">
+                                        <div>الخميس</div><div class="font-bold" dir="ltr">8 AM - 1 AM</div>
+                                        <div>الجمعة</div><div class="font-bold text-lilac-600" dir="ltr">8 AM - 1 AM</div>
+                                        <div>السبت - الأربعاء</div><div class="font-bold" dir="ltr">8 AM - 1 AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                        div class=mt-10
-                            a href=httpsmaps.app.goo.gl9UbMaTZmkQbNMPop6 target=_blank class=w-full block text-center bg-stone-800 text-white py-4 rounded-xl font-bold hoverbg-stone-700 transition shadow-lg
+                        <div class="mt-10">
+                            <a href="https://maps.app.goo.gl/9UbMaTZmkQbNMPop6" target="_blank" class="w-full block text-center bg-stone-800 text-white py-4 rounded-xl font-bold hover:bg-stone-700 transition shadow-lg">
                                 افتح الموقع في جوجل ماب
-                            a
-                        div
-                    div
+                            </a>
+                        </div>
+                    </div>
 
-                    !-- Map Side (Iframe) --
-                    div class=h-[400px] lgh-auto w-full bg-stone-200 relative
-                        iframe 
-                            src=httpswww.google.commapsembedpb=!1m18!1m12!1m3!1d884549.9241750352!2d30.181753419827!3d30.00031250000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145845d7527c9f9b%3A0x46256e634c64ce28!2z2LnYp9mE2YUg2KfZhNiy2YfZiNix!5e0!3m2!1sen!2seg!4v1765455149546!5m2!1sen!2seg 
-                            width=100% 
-                            height=100% 
-                            style=border0; min-height 450px; 
-                            allowfullscreen= 
-                            loading=lazy 
-                            referrerpolicy=no-referrer-when-downgrade
-                            class=absolute inset-0 w-full h-full grayscale hovergrayscale-0 transition duration-500
-                        iframe
-                    div
-                div
-            div
-        div
-    section
+                    <!-- Map Side (Iframe) -->
+                    <div class="h-[400px] lg:h-auto w-full bg-stone-200 relative">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884549.9241750352!2d30.181753419827!3d30.00031250000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145845d7527c9f9b%3A0x46256e634c64ce28!2z2LnYp9mE2YUg2KfZhNiy2YfZiNix!5e0!3m2!1sen!2seg!4v1765455149546!5m2!1sen!2seg" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 450px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="absolute inset-0 w-full h-full grayscale hover:grayscale-0 transition duration-500"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    !-- Professional Footer --
-    footer class=bg-stone-900 text-white pt-16 pb-8 border-t border-stone-800
-        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
-            div class=grid mdgrid-cols-3 gap-12 text-center mdtext-right mb-16
-                !-- Branding --
-                div class=flex flex-col items-center mditems-start
-                    div class=flex items-center gap-2 mb-6
-                        i data-lucide=flower class=h-8 w-8 text-lilac-400i
-                        h2 class=text-3xl font-boldعالم الزهورh2
-                    div
-                    p class=text-stone-400 leading-relaxed mb-6
+    <!-- Professional Footer -->
+    <footer class="bg-stone-900 text-white pt-16 pb-8 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 text-center md:text-right mb-16">
+                <!-- Branding -->
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="flower" class="h-8 w-8 text-lilac-400"></i>
+                        <h2 class="text-3xl font-bold">عالم الزهور</h2>
+                    </div>
+                    <p class="text-stone-400 leading-relaxed mb-6">
                         وجهتكم الأولى للزهور الطبيعية والهدايا الفاخرة في فيصل والجيزة. نهتم بأدق التفاصيل لنسعدكم في كل مناسباتكم.
-                    p
-                    div class=flex gap-4
-                        a href=#location class=w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hoverbg-lilac-600 transition text-white
-                            i data-lucide=map-pin class=h-5 w-5i
-                        a
-                        a href=httpswa.me201044850752 class=w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hoverbg-green-600 transition text-white
-                            i data-lucide=message-circle class=h-5 w-5i
-                        a
-                    div
-                div
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#location" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-lilac-600 transition text-white">
+                            <i data-lucide="map-pin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://wa.me/201044850752" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-green-600 transition text-white">
+                            <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
                 
-                !-- Links --
-                div class=mdpr-12
-                    h3 class=text-xl font-bold mb-6 text-lilac-200روابط سريعةh3
-                    ul class=space-y-4 text-stone-400
-                        lia href=#home class=hovertext-white transitionالرئيسيةali
-                        lia href=#occasions class=hovertext-white transitionالمناسباتali
-                        lia href=#reviews class=hovertext-white transitionآراء العملاءali
-                        lia href=#location class=hovertext-white transitionتواصل معناali
-                    ul
-                div
+                <!-- Links -->
+                <div class="md:pr-12">
+                    <h3 class="text-xl font-bold mb-6 text-lilac-200">روابط سريعة</h3>
+                    <ul class="space-y-4 text-stone-400">
+                        <li><a href="#home" class="hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#occasions" class="hover:text-white transition">المناسبات</a></li>
+                        <li><a href="#reviews" class="hover:text-white transition">آراء العملاء</a></li>
+                        <li><a href="#location" class="hover:text-white transition">تواصل معنا</a></li>
+                    </ul>
+                </div>
 
-                !-- UpdateFollow --
-                div
-                    h3 class=text-xl font-bold mb-6 text-lilac-200تابعوناh3
-                    p class=text-stone-400 mb-4 leading-relaxed
+                <!-- Update/Follow -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-lilac-200">تابعونا</h3>
+                    <p class="text-stone-400 mb-4 leading-relaxed">
                         نشارككم أجمل التنسيقات والعروض الحصرية. كونوا بالقرب منا دائماً.
-                    p
-                    a href=# class=inline-flex items-center gap-2 text-lilac-300 hovertext-white transition group
-                        span class=font-bold border-b border-transparent group-hoverborder-white transitionزيارة صفحتناspan
-                        i data-lucide=arrow-left class=h-4 w-4 transform group-hover-translate-x-1 transitioni
-                    a
-                div
-            div
+                    </p>
+                    <a href="#" class="inline-flex items-center gap-2 text-lilac-300 hover:text-white transition group">
+                        <span class="font-bold border-b border-transparent group-hover:border-white transition">زيارة صفحتنا</span>
+                        <i data-lucide="arrow-left" class="h-4 w-4 transform group-hover:-translate-x-1 transition"></i>
+                    </a>
+                </div>
+            </div>
             
-            div class=border-t border-stone-800 pt-8 text-center text-stone-500 text-sm flex flex-col mdflex-row justify-between items-center gap-4
-                p&copy; 2025 عالم الزهور. جميع الحقوق محفوظة.p
-                div class=flex gap-6
-                    span class=hovertext-white cursor-pointer transitionسياسة الخصوصيةspan
-                    span class=hovertext-white cursor-pointer transitionشروط الاستخدامspan
-                div
-            div
-        div
-    footer
+            <div class="border-t border-stone-800 pt-8 text-center text-stone-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2025 عالم الزهور. جميع الحقوق محفوظة.</p>
+                <div class="flex gap-6">
+                    <span class="hover:text-white cursor-pointer transition">سياسة الخصوصية</span>
+                    <span class="hover:text-white cursor-pointer transition">شروط الاستخدام</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    !-- Floating WhatsApp Button --
-    a href=httpswa.me201044850752 target=_blank class=whatsapp-float bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center gap-2 hoverbg-[#20ba5a] group border-4 border-white
-        span class=font-bold hidden mdblock max-w-0 overflow-hidden group-hovermax-w-xs transition-all duration-500 whitespace-nowrap pl-2تواصل معناspan
-        svg xmlns=httpwww.w3.org2000svg width=28 height=28 viewBox=0 0 24 24 fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round class=animate-pulse-slowpath d=M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21path d=M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1svg
-    a
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201044850752" target="_blank" class="whatsapp-float bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center gap-2 hover:bg-[#20ba5a] group border-4 border-white">
+        <span class="font-bold hidden md:block max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap pl-2">تواصل معنا</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse-slow"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+    </a>
 
-    !-- Logic --
-    script
+    <!-- Logic -->
+    <script>
         lucide.createIcons();
 
-         Mobile Menu Toggle
+        // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
 
-        btn.addEventListener('click', () = {
+        btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
 
-         Close menu when clicking link
-        menu.querySelectorAll('a').forEach(link = {
-            link.addEventListener('click', () = {
+        // Close menu when clicking link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
                 menu.classList.add('hidden');
             });
         });
 
-         Scroll Reveal Animation
+        // Scroll Reveal Animation
         function reveal() {
-            var reveals = document.querySelectorAll(.reveal);
-            for (var i = 0; i  reveals.length; i++) {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
                 var windowHeight = window.innerHeight;
                 var elementTop = reveals[i].getBoundingClientRect().top;
                 var elementVisible = 150;
-                if (elementTop  windowHeight - elementVisible) {
-                    reveals[i].classList.add(active);
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
                 }
             }
         }
-        window.addEventListener(scroll, reveal);
-         Trigger once on load
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
         reveal();
-    script
-body
-html
+    </script>
+</body>
+</html>
